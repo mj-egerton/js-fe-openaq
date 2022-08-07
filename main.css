@@ -13,3 +13,9 @@ h1 {
     color: var(--primary);
     text-align: center;
 }
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
