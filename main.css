@@ -1,0 +1,15 @@
+@import './src/styles/fonts.css';
+@import './src/styles/variables.css';
+@import './src/styles/media-queries.css';
+
+body {
+    background: var(--secondary);
+    color: var(--text-primary);
+}
+
+h1 {
+    font-family: 'DMSerifDisplay-Regular';
+    font-size: 60px;
+    color: var(--primary);
+    text-align: center;
+}
