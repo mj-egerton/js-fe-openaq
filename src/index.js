@@ -37,13 +37,13 @@ const formatLocationArticle = ({
   measurements,
 }) => {
   return `<article class='air-quality-article'>   
-        <h3>${city + ", " + country}</h3>
-        <p>- ${location}</p>
-        <p>- ${(coordinates.latitude, coordinates.longitude)}</p>
-        <p>- ${measurements.map((measurement) => {
+        <h3 class='air-quality-article-title'>${city + ", " + country}</h3>
+        <p>Exact location: ${location}</p>
+        <p>Lat, Long: ${coordinates.latitude + ", " + coordinates.longitude}</p>
+        <p>${measurements.map((measurement) => {
           return (
             measurement.parameter +
-            " " +
+            ": " +
             measurement.value +
             " " +
             measurement.unit
